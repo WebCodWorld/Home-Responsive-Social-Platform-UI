@@ -1,0 +1,404 @@
+<!--Made by Web Code World.
+-->
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>WebCodeWorld - Responsive Social Platform UI</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container" x-data="{ rightSide: false, leftSide: false }">
+  <div class="left-side" :class="{'active' : leftSide}">
+    <div class="left-side-button" @click="leftSide = !leftSide">
+      <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+  <path d="M19 12H5M12 19l-7-7 7-7"/>
+</svg>
+    </div>
+    <div class="logo">CodeWorld</div>
+    <div class="side-wrapper">
+      <div class="side-title">MENU</div>
+      <div class="side-menu">
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+            <path d="M9 22V12h6v10" />
+          </svg>
+          Home
+        </a>
+        <a href="#">
+          <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+          </svg>
+          Latest News
+        </a>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+            <circle cx="12" cy="10" r="3" /></svg>
+          Explore
+        </a>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+            <path d="M14 2v6h6M16 13H8M16 17H8M10 9H8" />
+          </svg>
+          Files
+        </a>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+            <circle cx="8.5" cy="8.5" r="1.5" />
+            <path d="M21 15l-5-5L5 21" />
+          </svg>
+          Galery
+        </a>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+            <path d="M16 2v4M8 2v4M3 10h18" />
+          </svg>
+          Events
+        </a>
+      </div>
+    </div>
+    <div class="side-wrapper">
+      <div class="side-title">EXTRA</div>
+      <div class="side-menu">
+        <a href="#">
+         <span class="menu-icon">
+                      <i class="ri-book-2-fill"></i>
+                    </span>
+                  </a>
+                    <span class="menu-title">Documentation</span>
+                    <span class="menu-suffix">
+                      <span class="badge secondary">Beta</span>
+                    </span>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="#">
+                    <span class="menu-icon">
+                      <i class="ri-calendar-fill"></i>
+                    </span>
+                  </a>
+                    <span class="menu-title">Calendar</span>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="#">
+                    <span class="menu-icon">
+                      <i class="ri-service-fill"></i>
+                    </span>
+                  </a>
+                    <span class="menu-title">Examples</span>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="#">
+                    <span class="menu-icon">
+                      <i class="ri-service-fill"></i>
+                    </span>
+                  </a>
+              </ul>
+            </nav>
+      </div>
+    </div>
+    <a href="https://linktr.ee/webcodeworld" class="follow-me" target="_blank">
+      <span class="follow-text">
+        <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+        Follow me All my links
+     </span>
+      <span class="developer">
+        <img src="assets/img/linktr.png" />
+        Web Code World — @webcodeworld
+      </span>
+    </a>
+  </div>
+  <div class="main">
+    <div class="search-bar">
+      <input type="text" placeholder="Search" />
+      <button class="right-side-button" @click="rightSide = !rightSide">
+         <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+      </button>
+    </div>
+    <div class="main-container">
+      <div class="profile">
+        <div class="profile-avatar">
+          <img src="assets/img/5024509.png" alt="" class="profile-img">
+          <div class="profile-name">Web Code World</div>
+        </div>
+        <img src="assets/img/webwordback.jpg" alt="" class="profile-cover">
+        <div class="profile-menu">
+          <a class="profile-menu-link active">Timeline</a>
+          <a class="profile-menu-link">About</a>
+          <a class="profile-menu-link">Friends</a>
+          <a class="profile-menu-link">Photos</a>
+          <a class="profile-menu-link">More</a>
+        </div>
+      </div>
+      <div class="timeline">
+        <div class="timeline-left">
+          <div class="intro box">
+            <div class="intro-title">
+              Introduction
+              <button class="intro-menu"></button>
+            </div>
+            <div class="info">
+              <div class="info-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 503.889 503.889" fill="currentColor">
+                  <path d="M453.727 114.266H345.151V70.515c0-20.832-16.948-37.779-37.78-37.779H196.517c-20.832 0-37.78 16.947-37.78 37.779v43.751H50.162C22.502 114.266 0 136.769 0 164.428v256.563c0 27.659 22.502 50.161 50.162 50.161h403.565c27.659 0 50.162-22.502 50.162-50.161V164.428c0-27.659-22.503-50.162-50.162-50.162zm-262.99-43.751a5.786 5.786 0 015.78-5.779h110.854a5.786 5.786 0 015.78 5.779v43.751H190.737zM32 164.428c0-10.015 8.147-18.162 18.162-18.162h403.565c10.014 0 18.162 8.147 18.162 18.162v23.681c0 22.212-14.894 42.061-36.22 48.27l-167.345 48.723a58.482 58.482 0 01-32.76 0L68.22 236.378C46.894 230.169 32 210.321 32 188.109zm421.727 274.725H50.162c-10.014 0-18.162-8.147-18.162-18.161V253.258c8.063 6.232 17.254 10.927 27.274 13.845 184.859 53.822 175.358 52.341 192.67 52.341 17.541 0 7.595 1.544 192.67-52.341 10.021-2.918 19.212-7.613 27.274-13.845v167.733c.001 10.014-8.147 18.162-18.161 18.162z" /></svg>
+                  I’m Web Code World-
+                  📱I make Full Stack Developer -
+                  🚀All my links are available here⤵️ https://linktr.ee/webcodeworld <a href="#"></a>
+              </div>
+            </div>
+          </div>
+          <div class="event box">
+            <div class="event-wrapper">
+              <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAQEBAQDxAQEA8VEA8PFQ8VFRAQDxYPFRUXFxURFRUYHSggGBolHRYVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGi0lHyUtLy0tLS0tLS0tLS0uLS0tLS0tLS0tLS0tLS0tLS0tLS0rLS0tLS0tLS0tLS0tLS0tLf/AABEIAJ8BPgMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAABAAIDBAUGB//EAE0QAAEDAgMEBgUIBQkHBQAAAAEAAgMRIQQSMQUTQVEGImFxgZEUMlKhsSNCYnJzs8HRFTNT4fAHJISSk6LD0vEWNENUgpSyREVjdKP/xAAaAQACAwEBAAAAAAAAAAAAAAAAAQIDBQQG/8QANxEAAgECBAIIBgAEBwAAAAAAAAECAxEEEiExQVETInGRobHB8DJCYYHR4TNSkvEFFCOCwtLi/9oADAMBAAIRAxEAPwDyoOSLlnOxThyQ9Mf2Lu/zMTk6BmjmSzLO9If2eSRxD+zyS6b6Ml0RekloCVB+kByKrGZxFDooSq515X0JxoxtqaP6RHIofpIeyfNU4nUB8Es/YpKpUavm8A6KHIvDaY9k+akj2gD80+azs6cx3xT6apHW/gHQwfA148S08aHkbKUFYm/IvRTNxknIK2GL5ruKpYZX0NcFOBWP6bJ2JenS8grFilyfcReHfNGzVFZeFxjySHU0V+GWqup1oz0RVOnKO5YbzCeZXe0UI+4eKkzAcGnx/cr9SttDHSk6uJQ3h5lO3v0W+QQ3vYzWugQO308g713NNLv4sgTXkkUicUh2bu8gmJVSRckhJpTk0pEkaeGwzjGH74MZ1hckAHlrqaKq92Uj5QGoBJoHUJFaLZ2b+pZb5kh96ptHVH1R/wCLU5vKkUwd27lBs1BZ510panNBzhcZiRwOUXPmtbaHqcdR8XpQHqt10HxCll1sNVVfb33GKKWue22nde6aaXuey371qYs/Jm/Af4aylFqxfCWZDmRg8aFF8QGhr/HalEO2iM7CToULYlxITTgmlOIpqmlRJDUCkUkgAgUkCgZkxsFNEhGK6Ix6BO/JYqG3qNkZao1VcuVp+iqP1SbsSpvQTSgUmIOUWywTSnpjU9W09gCns4d6Ynx6jvU5/CxERKW8KT0xUXGPDynCU6+CiRQpNCsi3FNQ1FKm19PMK9hMQAaP6pOhrVpHMFZDeCuYWRo+Tk/VuPrcWO0Dx+I4hdVGfWvt5ffkvrw8qaserzOiiNOFU8vHshVtkBwEkcgq5jsteynA8QtF0baaBasXmV/Mz3ZO3kVXSDg1uvehvPos48FZEbetYfwEJI25GkAV/cpO6GmnoVqppVrI21gi6NtdAq7k8xTSqrUbRmyloNaivEdxU7omCvVbbuopqNwzozappK1mwMqBlbfLxbW/CtFRxkQbQt41t+I5IcbBGabsaGFfKIgW2aGuAAbmcRck6igVTeSigy8PdQfhRTwRkxspK5liMorTLxOuiqStbXrOkrbUNJpS3zk5JaXHBavTwJJcTK4XpStOGtT+ZRGImFrWA9nTh8FXLWUJ69dBZoHjdRuYRYqLkWRjHgvAnklkcACRQj6PCn5BRFhvpbtCjTlFssSsAOpwr5pr5CUiggYECigUhjSgiUEDAUESmoAymGydmUQZVOLBZYiJNK49xsqsmqsZaAqvJqiQ4AYk5FiBUCwDU9BoRqrYSSWoBT49R3hRVUkRuO9SlJONhDCLKNT1tcakGvdWvxUTlSx8BicgkEkA9qTtEmouFwFa9iPE6vA4jNFEaCpjDCeJLOrfwAU2/wCz3qlso1w7KfNe+M9569vNTLcTk4xb4pPwMxRjquTa+19Cz6T2D3fkk7E1+b4Wp8FWSRdjyRLXpH0feK/BRvnBuQfA0FPJQ1SKVx5UOfJeoqPEk+aaZXe0fMqMlCqY9CTeu9p3mU0uJ1JKbVKqBotMxhDQ2g9Ut81FNJmNSowik3csQa2p21Sc6pqgkkSSCgigkSGlNTimoACBRSKBjEESgi4wFNKJQSAwXIVRcmrCLx6SSKmooBNT2x1pdNCfHwU4QWaxGT0CyF1LD1tFE4UJHKy0of8AhfU/BZ7/AFnd5UqsFGKt74kITcm/fGxGpIwmBSM18VSy0Exv5fBRkK0/DkgFvIJz4DkYaX6wPeLj3FE97k6cc97cr+nqUkUEVEgOYU9j6m+iaGGlVb2Thd9PFHwdI2v1Bd3uBVtNOUlFcyE5KMXJ8Fc6HBdGJsRCx0Twx56wY5wjYWU9cuOhOqpnozN/zmz/APvcP/mW10nxjWCKN0uIgrWUPijzVF25Qc7OZsK8Fx+L3Jq5s08khNTnja2prcl29cfcuvHqEKzhDgkn2+7HLgJzqUc8+LbXZ7ua/wDs1PQ/zzZ+o/8AXYbt+mh/sziP+b2f/wB9hP8AOsEeofrN+DlEVxt2S98WdaW50g6LYo6YnAn+nYP8ZFaj6C7ScAW7hwIDgRi8LQtNw4fKXBvfsXJL0bo0+jmtYXuacBhnFpo0bzrkgXI7K2Svfj4g0c67onjR/wATCHh/v+A1/tVUn2FjmPfGYZnPYQ12SsoBIBHWYSCLi4NFc6VyuzOE+GeyT1Y5C8lmUZSS0AZXGhvQ2Lua6uCcDamJpO0M+QAhAa8vcYYx63AdWlq9tLVabuB5xiY5onZJRJG6gOV+djqHQ0Kh3z/ad5ldd01weKfNKQ57sO2kgY6aMtbRty2PNUDWlq+a497SNUm5W3Y7I6fhGecUTz9YsBJ80gkdIvsMP921ALdn8TM+g704t8kFJJBRL0OQQQRcYimFEpqLjEkkkkA0pIFApDEU0opIAwnJqe0I0WQqd1cvGIpzgmoayuwgtUkfBRhOafgnB9YT2L0TxWO4tGR40CoO1PeU5vD+LJp495UqssyXvgRhGzYE5mqCLdVU9iw0I9B3BWIgDE6vB9f7rU/ZsYpvCKhtgOb6fh+SjxzjlJrS+g0UnG6OrCU3STrS4p6evh99zHkFypsPh8yTX3vQ94BW7spsTiAWjw6p9ysoUekla5nYitki3Yg2fhBUhwsAVpbNw2WRj4mQB8Y1lc6NrnEUN23cQPvO5aE2ynRte+MGQFjqAetmpYEKngtp7Ribkjwb8xJq0RYkm7W5X0a7U0dfsPJd1T/Qja2v7XHxVuKM6jOOIk+tpt+dH43K+Oij3hMsWGkcesX+ky0dW1R7uzsVN8eHoRuIAa6+lG1uRHiljel2Oe91ZBHo3dhjAG0+aMwLhe9K69wVLEbdnkcXSGJ73XL3QYZzjet3FlT+QpouLpKT3g+/9GlkqLaVvsXGwYfKRu4yai/pkQ4fU7/NUcTgquJj3LGHRhxELyLe1UVVR76gk0u6tgGit9ALAX0CgTlKjp1H/V/5Eo1f5l/S/wDsW/QH84f7fD/516V0RjLT+sjtg4G23ckgNH3FiCKkUuRYryqi9N6Gt+VH/wBLBe9r1Xnh8ia/3X/4r1JZZv42n9rerKfTSSUMcDI2RrSxwL4YpKtcGirXNwrWNvS+8uBSlbLV6ObN3mKkMbS57pIi85pAGxxgF1KBoYS2oBJdemmhwP5QsXM2RsOZ4hfCHuafVc8SOJvStQQOK3sJG+UyYeJr5JHvBDGTPhdWPI4k5XOoaXHUZpxrVKU5NWb097AoqK0RWj6MOnly4jCt3r34t++/nJY/DQjDFs8fytC1zZHgEGlco4UPH9JNlvw+QS4duHkL520bvt2+NhaGysMjiXNJLqOFiAu0n2ziJ8K2Z8WPzy+lTsa3EPY50cPolZGUjplADiKC2V/tW5TpbtKTFNgnlE4LzO4b1+8Jb1ACwhjQGWIAApUFVMnG99RztI/sMP8AdNSCDtI/sIPuWIhb831mZ+H/AIcexeQ5NqlVBQOhCSQRQMaUCiUxIYkkEkAIoFEoJDAgiUwoAx26pyjCkJWdRl1bFw0pqcmuUavBghBEPTQkqczvdDHh6DRU0FSeQuVtbE2NvgZJSWxDThmprfgB79B2XMQ0PDxG0MiaMrWigre5POqsUJSSbOmGEm4Z+ey4v9HPjDuJpx5an3LVh2XGwAyFznG+QGgHfS6lwkTYxU0zfAKvPieI1PNSUUhxjGms0rN8uRPPIGNAHqiw071mzvzWJPuUr5DlobmtVWJQyurVcuzkIRDmR4fvV3BRuaQWmvFZ5ryT4Z3sNWnwTpyUZJs5KkXKNkehbD2mAA19uFRU+Oiuz4LGSmR0OOwUAkGYyNdiN5u6FuV2YENku27e8EcfPm7SLrOBHcuh6P7XEJ6rgAeenf8ARK0Kso4mOWL1V7X8ny1trr2GZTpPCSlOzadrpfTiubs3+R0n8m87qkY3AvcXEEmR461yb5bmxWS7oeR/7jsk92Kb/lXqmF2pHMctaPoeqeNvmnQ/FaDwSGi5uz4n815mtiqtCeSrTyvk3+rPtWht0owqRzQldczxk9EXcMdss/0uIfGiaeiUnDF7MP8ATcIPi4L0fa2LY1zC8uyxRgyUYXlrXB4zUANRcaA042Xl+3NobySRrXxzRl1RMY4984cM0hja6v8Apdd1Pr04zel9be+YpRsTHoliD6suAf8AVx+z/wAZV33RzZkkElXPwp/muCjBbicI6kjGOziz+BIHI8Ki68kASAUiB6/t3CyPFGYCDFPyua2SSbA5GhwrY7zMaEk06tyaHQobWhx2BjxEh3zIQ5rw/DYlocMr2EmSOQkgAtoAG6Z82tV5CQu86SYjHPxePwbJ8XLBCS0wMLnOdE0tYRQfN617HuUiLibOB6ZTY3EZcPJjjNmfM0GbC4eMAGJ25GchojG6oG8Q99a1XO/ymz4iSaF+ID6uY97c0mGlDQ536pm5c4BjeFb3NVQ2T0dxOIkawYLK0uDS+XfRgV41LhmNj6oPcsLHxtbJI2N2djXva19uswOIa63MUKUlowSSZuO0Z9jh/uWJBB2jPscN9yxDMOYW3U+J9vqZ+H/hx7F5D6oVTcyNVEvuGqSYkkO4SUwolNKCVxJJIJDFVBIoIASBSQSGYikUakasqk9S4Ka5FBysnqmAAnxRF7msbq5waO8mgUav7CbXEwfaNPka/gudauxZTjmko82l3s63GEMYIWCjG9XlWlh+J7ys176diuY51z3lY+JkXZN2PQYmWVaFbFzcvxVQvdzQmfdR1VDZ5+pK8iSruSNXclGHHmlnPNK5WShx5Ih/h4JgkdzS3h5p3AkqeYU8bqC9e9VAVaw71ZB3ZVU2NDCYt7bNkJHI8lpQZT1hFAeZ3OGce852FY4Y03pQ8xb3cVYge5laHMHAjKbG/HzXfHLJZKiUo/XXwf4OCSaeam7S7vFGgdhYSRpLWymQNc4Ma9rMxFK6tcALjQcVhviw7XZThsSH1Ay+kRVqdBTcdy6XYwyvaTeke687n3rpzBnyuaSCCLcCCfW7FOvgozhnirNb298CrCYzJiFRqy6stpPWz5PVaPwf0280ghwz3Na3D4wucWtAbLE8kuoGj9SLnMPNSY3BYWJ2WaPHwuIzAPbFUtqRmFctRUEVHIrrNoMh+UZMJSMrnZhFM9mXNUuzhpBbSlwadqfszauzXwtE7sOZDKQS5jWkxDNlL7ULr+sMuorWhDsqcYrjc3alPIrqSZwpiwZ0mxQ74IXf4wXZ4npNsl2KkxjIcfHiXvkfvGmE0c8EeqXlrhfQihFQRdXYMVswgHJs4Euces3DerWOgIoO24p1Q7iS5cr02iwjZI34R0XW3ge2JzHR9V1GuytswkcAADqAFHQqubOO6Zb6MxCeSHP1TIzCRMeQaCmZ2LIb3ilL3F1yG1sJFFk3UzpS4Fxq2EADheOV4rrY0ItzWdmWhtJkYhwZZTM6CR0nPeb+UCv/AECP3JNp3sCVjSdoz7LD/csWJO3NI/6xWwdGfYwfdMWM89d/1j8StHF2bSfP8nFhNILsXoROjomUVlhrr5JSMtUBcTpK10dmbgyAOPM+ZRzHmfMoJKqxIdvX+07zKO/f7bvMqNJSzS5sLIl9If7R80vSpPaPuUSCWeXN94WRrYSQuYCTU1KlVbAep4lWFpU3eC7Cl7iSQQKkBjItQSWRF2dy8kKBSqmlWzlyAK0ejn+9Q/WP/iVnsfQg0BoQaG4NOBC6npDhI2vMkLRGSQ6jOqAfogWHgoQXHkdeFoud6i+Vp299hNtF1CbnU8qLDxL1HLtCQ+s4v76E+aruxNVZKpFnVisVCpoiN6CJcD/qh1e33Ksy2hJJUHNLL2hAhI1Qp3IJgSAqVjlAE5pTRFovxPPBxb41Hkaq1C5xIsC2ouAaeOQke5Z0c7Rx+BUzMdGCHUqRxAoffX8F206kVu/H36HHUpyeyOlwL71XTYGbRchgpahrhxAPmuk2bJWi26L00PP46ndO5z+3cfHg53wjCNLMrcpE+NYd04aWlpStRSgFtFi/pLAnXZ9Pq4iYfEFdb0t2RHK6KV+auTdVBpocw4fSK5w7Ah9qTzb+SwcThZRqyUdr6HpMBUlWw0Kkt2vJteaMzF4rCuI3eGfGKXBmMlTzFWCirl0PsyD/AKmn8FsnYEXtyf3fyTT0fZ+0d5BVdDU5I6bGODByl82fkpMdiI3CNsYcGsYW9b1iSSSTS3GlqWA41J0XdHhwlP8AVr+Kaejx/aj+r+9J0KtrZfL8iurksnzfsoPumLEcKvd9Y/FbuLZleW60ZE2vdGwLBc6hd3n4rrxbWZX5s48HfJ9kOJ61FO0WVVitt0VVJ31OiasUyLoJP1PeUFycS0KCSCiAikkggZp4H1B3lWFVwXqDvKsLTp/Auw53uxIVQSUhmQkgksgvHJIKWKFzvVBPwUtQSvsNYwuNGip5DXwWzNipBEBIKkACh1TYcPRmUWJ1eNT9Hu/JNlw+VhHYUk2maFCEoXs9WvaKpjztLxSg1HG11SLVcwUhDTaorW1KgqEWJrz7kaHNUSkoy57kCClcmosUDEU5CiQDUk9JADEk+nYpoG30r4AqUYXdhN2KyS39n4a9qNJ+gS094dULEfqe8q2rQdOKb438PfJFdOqpyaXD371OiwEwDGD6Dfgui2VKSRlIHYRULho5yP44Le2RjaEXWxhcSm7MysZhm4s7PGxOkY5li7IXigoKhwtr6xoQuR9Oi/aN86Lsdlygiup5lcX032QYp97GPk5SXd03zh46+asx8GoqouG5y/4Ri+jqSw8uOq7eK+6S7nzJY8SxxAa9pJ0AIJPgpXOAJaSA4WIPVIPIhcpGXscC0EEaFF0j3ElziCSSSa1JOpJ4rMVdcUb8nJvSx1QcOY8wiVzjWt9sg61FLntrWqLMQBbeX7Q0t/u0IVqrpbrxRU7+7lrGyh0rnNdUEjqmxs0CrK66aLAfqe8rY9MabEV7gXN96xwFy4iedrXn6EqEXFWtyJY1b4KmC7t8kXSupT8E4VFFE5xbZETdFMRquS5aIpIVSqncApJIJAaWC9Qd5Uyr4T1B4qdadP4Ec73YKooFBTAyVJGwuNGgk8go1uelwstGGZdK0kqe01WO2d1Gkqjd5JW5+hHhtkcZCPqg/ErQbEAKCgHIKl+kG+y3+8pWYhpbmy1uRqRoB+ajmNGnCnHSNi0G9qixTerzUJxg9j3/ALkt8HWpTxH5KSlqTVkzMwti4dqMqbpI4fxzRkQzhjpHLybRXcExSOTCmc0twJVQRQQFVGqCSAHZk9szhpZRpJqTQNJ7lkY2UaPcO63wVUlJBOUnLdiUUtkWi1WsFLQqtXv9ycw8V0Up63IVoLZbHd7Exml1u46MTQPaWhxy5gD7QuL8O9cDszFkELsdl4suoKjupfxK9FQqKpCx5THYd0551w1OWGBrLugetnyDTzW5D0RJAzSiv1Kj4rndpYjJiHOJe1wmxDgWm4+XkVhvSWYW9Kn/ALPD/HLVZUJ0aU5RqLZ++KNatGvWoxlRaTa104/TRk219hxQPyExvdSpytpSugPas2TCxj8kX7Qa6tXvJJJJNSSTqTe6ryYp1AGSUFSbtPGnLuVM6tJy0Wn0OnD0qihapK77vBB3AbdgDnfTrQeF1TdBJx3ZvXRn5KZ88ntRnwfVR+mv4taf47kpV6TVtUXKlO99GRmJ/wCzjPgwfCiY5j/2Q8M/4FTnaB4sHmj+kG8WeX+qFKi/m70vwPLUXBfb+5Xyc43f/oPim5RxZJ5j8Wq23aEfsnzUn6QjPP3lC6J/Ou5fgXX/AJfEzvk/pC3/AMZv7kQxhNs39UU7/WWmMXGfa8gntkiOo8wmqVN7yi/faJzmvlfn6GV6O32h4hwtzsizBlxowtNgadcfELWbuD7Pk78lubI2VlZ6QGAscXNjuOtKDd5rcUPdVWQwsJcYtcbP9lNbFujG8k/pfS77jm34GSFrc4/ceRUK7aXDZgWuaHA1rU6rl9qbNdCRxY6uU1Fe4qx08q02KsNjFVeWW/mUEqolMKrO4//Z" class="event-img" />
+              <div class="event-date">
+                <div class="event-month">May</div>
+                <div class="event-day">30</div>
+              </div>
+              <div class="event-title">Developer Storage</div>
+              <div class="event-subtitle">30st May, 2023 05:00AM</div>
+            </div>
+          </div>
+          <div class="pages box">
+            <div class="intro-title">
+              Your pages
+              <button class="intro-menu"></button>
+            </div>
+            <div class="user">
+              <img src="assets/img/5024509.png" alt="" class="user-img">
+              <div class="username">Web Code World</div>
+            </div>
+            <div class="user">
+              <img src="assets/img/5024509.png" alt="" class="user-img">
+              <div class="username">Web Code World</div>
+            </div>
+            <div class="user">
+              <img src="assets/img/5024509.png" alt="" class="user-img">
+              <div class="username">Web Code World</div>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-right">
+          <div class="status box">
+            <div class="status-menu">
+              <a class="status-menu-item active" href="#">Status</a>
+              <a class="status-menu-item" href="#">Photos</a>
+              <a class="status-menu-item" href="#">Videos</a>
+            </div>
+            <div class="status-main">
+              <img src="assets/img/5024509.png" class="status-img">
+              <textarea class="status-textarea" placeholder="Write something to Web Code World.."></textarea>
+            </div>
+            <div class="status-actions">
+              <a href="#" class="status-action">
+                <svg viewBox="-42 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M333.7 123.3c0 33.9-12.2 63.2-36.2 87.2-24 24-53.3 36.1-87.1 36.1h-.1c-33.9 0-63.2-12.1-87.1-36.1-24-24-36.2-53.3-36.2-87.2 0-33.9 12.2-63.2 36.2-87.2 24-24 53.2-36 87-36.1h.2c33.8 0 63.2 12.2 87.1 36.1 24 24 36.2 53.3 36.2 87.2zm0 0" fill="#ffbb85" />
+                  <path d="M427.2 424c0 26.7-8.5 48.3-25.3 64.3-16.5 15.7-38.4 23.7-65 23.7H90.2c-26.6 0-48.5-8-65-23.7C8.5 472.3 0 450.7 0 423.9c0-10.2.3-20.4 1-30.2a302.7 302.7 0 0112.1-64.9c3.3-10.3 7.8-20.5 13.4-30.3 5.8-10.2 12.5-19 20.1-26.3a89 89 0 0129-18.2c11.2-4.4 23.7-6.7 37-6.7 5.2 0 10.3 2.2 20 8.5l21 13.5c6.6 4.3 15.7 8.3 27 11.9a107.7 107.7 0 0033 5.3c11 0 22-1.8 33-5.3 11.2-3.6 20.3-7.6 27-12l21-13.4c9.7-6.3 14.7-8.5 20-8.5 13.3 0 25.7 2.3 37 6.7a89 89 0 0128.9 18.2c7.6 7.3 14.4 16.1 20.2 26.3 5.5 9.8 10 20 13.3 30.3a305.5 305.5 0 0112.1 64.9c.7 9.8 1 20 1 30.2zm0 0" fill="#6aa9ff" />
+                  <path d="M210.4 246.6h-.1V0c34 0 63.3 12.2 87.2 36.1 24 24 36.2 53.3 36.2 87.2 0 33.9-12.2 63.2-36.2 87.2-24 24-53.3 36.1-87.1 36.1zm0 0" fill="#f5a86c" />
+                  <path d="M427.2 424c0 26.7-8.5 48.3-25.3 64.3-16.5 15.7-38.4 23.7-65 23.7H210.2V286.5h3.3c11 0 22-1.8 33-5.3 11.2-3.6 20.3-7.6 27-12l21-13.4c9.7-6.3 14.7-8.5 20-8.5 13.3 0 25.7 2.3 37 6.7a89 89 0 0128.9 18.2c7.6 7.3 14.4 16.1 20.2 26.3 5.5 9.8 10 20 13.3 30.3a305.5 305.5 0 0112.1 64.9c.7 9.8 1 20 1 30.2zm0 0" fill="#2682ff" />
+                </svg>
+                People
+              </a>
+              <a href="#" class="status-action">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path d="M87.084 192c-.456-5.272-.688-10.6-.688-16C86.404 78.8 162.34 0 256.004 0s169.6 78.8 169.6 176c0 5.392-.232 10.728-.688 16h.688c0 96.184-169.6 320-169.6 320s-169.6-223.288-169.6-320h.68zm168.92 32c36.392 1.024 66.744-27.608 67.84-64-1.096-36.392-31.448-65.024-67.84-64-36.392-1.024-66.744 27.608-67.84 64 1.096 36.392 31.448 65.024 67.84 64z" fill="#e21b1b" />
+                </svg>
+                Check in
+              </a>
+              <a href="#" class="status-action">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <circle cx="256" cy="256" r="256" fill="#ffca28" />
+                  <g fill="#6d4c41">
+                    <path d="M399.68 208.32c-8.832 0-16-7.168-16-16 0-17.632-14.336-32-32-32s-32 14.368-32 32c0 8.832-7.168 16-16 16s-16-7.168-16-16c0-35.296 28.704-64 64-64s64 28.704 64 64c0 8.864-7.168 16-16 16zM207.68 208.32c-8.832 0-16-7.168-16-16 0-17.632-14.368-32-32-32s-32 14.368-32 32c0 8.832-7.168 16-16 16s-16-7.168-16-16c0-35.296 28.704-64 64-64s64 28.704 64 64c0 8.864-7.168 16-16 16z" />
+                  </g>
+                  <path d="M437.696 294.688c-3.04-4-7.744-6.368-12.736-6.368H86.4c-5.024 0-9.728 2.336-12.736 6.336-3.072 4.032-4.032 9.184-2.688 14.016C94.112 390.88 170.08 448.32 255.648 448.32s161.536-57.44 184.672-139.648c1.376-4.832.416-9.984-2.624-13.984z" fill="#fafafa" />
+                </svg>
+                Mood
+              </a>
+              <button class="status-share">Share</button>
+            </div>
+          </div>
+          <div class="album box">
+            <div class="status-main">
+              <img src="assets/img/5024509.png" class="status-img" />
+              <div class="album-detail">
+                <div class="album-title"><strong>Web Code World</strong> new <span>post</span></div>
+                <div class="album-date">1 hours ago</div>
+              </div>
+              <button class="intro-menu"></button>
+            </div>
+            <div class="album-content">You can follow me from the places below..
+              <div class="album-photos">
+                <img src="assets/img/shareprofil.jpg" alt="" class="album-photo" />
+                <div class="album-right">
+                </div>
+              </div>
+            </div>
+            <div class="album-actions">
+              <a href="#" class="album-action">
+                <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z" />
+                </svg>
+                99
+              </a>
+              <a href="#" class="album-action">
+                <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1" viewBox="0 0 24 24">
+                  <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
+                </svg>
+                35
+              </a>
+              <a href="#" class="album-action">
+                <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1" viewBox="0 0 24 24">
+                  <path d="M17 1l4 4-4 4" />
+                  <path d="M3 11V9a4 4 0 014-4h14M7 23l-4-4 4-4" />
+                  <path d="M21 13v2a4 4 0 01-4 4H3" />
+                </svg>
+                33
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="right-side" :class="{ 'active': rightSide }">
+    <div class="account">
+      <button class="account-button">
+        <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1" viewBox="0 0 24 24">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+          <path d="M22 6l-10 7L2 6" />
+        </svg>
+      </button>
+      <button class="account-button">
+        <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1" viewBox="0 0 24 24">
+          <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 01-3.46 0" />
+        </svg>
+      </button>
+      <span class="account-user">Web Code World
+        <img src="assets/img/5024509.png" alt="" class="account-profile" alt="">
+        <span>▼</span>
+      </span>
+    </div>
+    <div class="side-wrapper stories">
+      <div class="side-title">STORIES</div>
+      <div class="user">
+        <img src="assets/img/1.png" alt="" class="user-img">
+        <div class="username">Kelvin Monsar
+          <div class="album-date">1 minutes ago</div>
+        </div>
+      </div>
+      <div class="user">
+        <img src="assets/img/2.png" alt="" class="user-img">
+        <div class="username">Justin Atkinson
+          <div class="album-date">19 minutes ago</div>
+        </div>
+      </div>
+      <div class="user">
+        <img src="assets/img/3.png" alt="" class="user-img">
+        <div class="username">Eric Jones
+          <div class="album-date">1 hours ago</div>
+        </div>
+      </div>
+      <div class="user">
+        <img src="assets/img/4.png" alt="" class="user-img">
+        <div class="username">Melissa Taylor
+          <div class="album-date">3 hours ago</div>
+        </div>
+      </div>
+    </div>
+    <div class="side-wrapper contacts">
+      <div class="side-title">CONTACTS</div>
+      <div class="user">
+        <img src="assets/img/5.png" class="user-img">
+        <div class="username">David Torres
+          <div class="user-status"></div>
+        </div>
+      </div>
+      <div class="user">
+        <img src="assets/img/6.png" class="user-img">
+        <div class="username">Emily James
+          <div class="user-status"></div>
+        </div>
+      </div>
+      <div class="user">
+        <img src="assets/img/7.png" class="user-img">
+        <div class="username">Sarah Flores
+          <div class="user-status"></div>
+        </div>
+      </div>
+      <div class="user">
+        <img src="assets/img/8.png" class="user-img">
+        <div class="username">Kevin Stewart
+          <div class="user-status"></div>
+        </div>
+      </div>
+      <div class="user">
+        <img src="https://cdn1.iconfinder.com/data/icons/professional-avatars-4/64/programmer-programming-developer-designer-avatar-512.png" class="user-img">
+        <div class="username">Christy Bradley
+          <div class="user-status"></div>
+        </div>
+      </div>
+      <div class="user">
+        <img src="https://cdn-icons-png.flaticon.com/512/1667/1667333.png" class="user-img">
+        <div class="username">Thomas Lopez
+          <div class="user-status"></div>
+        </div>
+      </div>
+      <div class="user">
+        <img src="https://cdn4.iconfinder.com/data/icons/female-occupation-avatar-1/64/Programmer-Coding-Avatar-Occupation-Woman-512.png" class="user-img">
+        <div class="username">Mikayla Herrera
+          <div class="user-status idle"></div>
+        </div>
+      </div>
+      <div class="user">
+        <img src="https://avatars.githubusercontent.com/u/92637403?v=4" class="user-img">
+        <div class="username">Brenda Boyer
+          <div class="user-status idle"></div>
+        </div>
+      </div>
+      <div class="user">
+        <img src="https://cdn-icons-png.flaticon.com/512/939/939255.png" class="user-img">
+        <div class="username">Parker Lee
+          <div class="user-status offline"></div>
+        </div>
+      </div>
+      <div class="user">
+        <img src="https://cdn0.iconfinder.com/data/icons/football-29/64/manager-coach-avatar-soccer-football-boss-512.png" alt="" class="user-img">
+        <div class="username">Daniel Carr
+          <div class="user-status offline"></div>
+        </div>
+      </div>
+    </div>
+    <div class="search-bar right-search">
+      <input type="text" placeholder="Search" />
+      <div class="search-bar-svgs">
+        <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="3"/>
+          <path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z"/>
+        </svg>
+        <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 469.34 469.34">
+          <path d="M456.84 76.17l-64-64.06c-16.13-16.13-44.18-16.17-60.37.04L45.77 301.67a10.73 10.73 0 00-2.7 4.59L.41 455.73a10.68 10.68 0 0013.19 13.2l149.33-42.7c1.73-.5 3.3-1.42 4.58-2.7l289.33-286.98c8.06-8.07 12.5-18.78 12.5-30.19s-4.44-22.12-12.5-30.2zM285.99 89.74L325.25 129l-205 205-14.7-29.44a10.67 10.67 0 00-9.55-5.9H78.92L286 89.75zM26.2 443.14l13.9-48.64 34.74 34.74-48.64 13.9zm123.14-35.18L98.3 422.54l-51.5-51.5L61.38 320H89.4l18.38 36.77a10.67 10.67 0 004.77 4.77l36.78 18.39v28.03zm21.33-17.54v-17.09c0-4.04-2.28-7.72-5.9-9.54l-29.43-14.7 205-205 39.26 39.26-208.93 207.07zm271.11-268.7l-47.03 46.61L301 74.6l46.59-47c8.06-8.07 22.1-8.07 30.16 0l64 64c4.03 4.03 6.25 9.38 6.25 15.08s-2.22 11.05-6.22 15.05z" /></svg>
+        <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+      <path d="M12 5v14M5 12h14"/>
+    </svg>
+      </div>
+    </div>
+  </div>
+  <div class="overlay" @click="rightSide = false; leftSide = false" :class="{ 'active': rightSide || leftSide }"></div>
+</div>
+<!-- partial -->
+  <script src='https://cdn.jsdelivr.net/gh/alpinejs/alpine@v1.9.4/dist/alpine.js'></script>
+</body>
+</html>
